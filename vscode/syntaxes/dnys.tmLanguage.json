@@ -1,0 +1,89 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "dnyScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#reserved-words"
+		},
+		{
+			"include": "#data-types"
+		},
+		{
+			"include": "#data-flags"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#comparisions"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.dnys",
+				"match": "\\b(if|elseif|else|while|for|function|result|global|local|set|const|call|class|member|method|unset|construct|destruct)\\b"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "entity.name.function.member.dnys",
+				"match": "[-+]?\\d*\\.?\\d+"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"match": "%(\\w+)",
+				"name": "variable.other.constant.dnys"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.dnys",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.dnys",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.number-sign.dnys",
+				"match": "#.*"
+			}]
+		},
+		"reserved-words": {
+			"patterns": [{
+				"match": "\\b(require|exec|run|listlibs|print|sys|pause|exit|quit)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"data-types": {
+			"patterns": [{
+				"match": "\\b(bool|int|float|string|void)\\b",
+				"name": "entity.name.variable.dnys"
+			}]
+		},
+		"data-flags": {
+			"patterns": [{
+				"match": "\\b(true|false)\\b",
+				"name": "entity.name.type.enum.dnys"
+			}]
+		}
+	},
+	"scopeName": "source.dnys"
+}

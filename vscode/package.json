@@ -1,0 +1,25 @@
+{
+  "name": "dnyscript-syntax",
+  "displayName": "dnyScript Syntax Highlighting",
+  "description": "Syntax Highlighting for dnyScript and AquaShell",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "dnys",
+      "aliases": ["dnyScript", "dnys"],
+      "extensions": [".dnys"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "dnys",
+      "scopeName": "source.dnys",
+      "path": "./syntaxes/dnys.tmLanguage.json"
+    }]
+  }
+}
