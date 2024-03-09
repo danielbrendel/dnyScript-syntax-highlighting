@@ -3,6 +3,7 @@
   "displayName": "dnyScript Syntax Highlighting",
   "description": "Syntax Highlighting for dnyScript and AquaShell",
   "version": "1.0.0",
+  "publisher": "danielbrendel",
   "icon": "images/logo.png",
   "engines": {
     "vscode": "^1.87.0"
