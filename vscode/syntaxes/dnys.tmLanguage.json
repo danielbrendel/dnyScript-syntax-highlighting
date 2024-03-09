@@ -9,6 +9,39 @@
 			"include": "#reserved-words"
 		},
 		{
+			"include": "#plugin-array"
+		},
+		{
+			"include": "#plugin-auto"
+		},
+		{
+			"include": "#plugin-events"
+		},
+		{
+			"include": "#plugin-fileio"
+		},
+		{
+			"include": "#plugin-forms"
+		},
+		{
+			"include": "#plugin-inputbox"
+		},
+		{
+			"include": "#plugin-miscutils"
+		},
+		{
+			"include": "#plugin-netclient"
+		},
+		{
+			"include": "#plugin-speech"
+		},
+		{
+			"include": "#plugin-strings"
+		},
+		{
+			"include": "#plugin-textinput"
+		},
+		{
 			"include": "#data-types"
 		},
 		{
@@ -68,7 +101,73 @@
 		},
 		"reserved-words": {
 			"patterns": [{
-				"match": "\\b(require|exec|run|listlibs|print|sys|pause|exit|quit)\\b",
+				"match": "\\b(require|exec|run|getscriptpath|getscriptname|listlibs|print|sys|pause|exit|quit)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-array": {
+			"patterns": [{
+				"match": "\\b(static_array|store_array_item_s|free_array_s|dynamic_array|store_array_item_d|store_item_to_array_d|copy_array_item_d|resize_array|item_insert|item_append|free_array_d|asetindex|foreach)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-auto": {
+			"patterns": [{
+				"match": "\\b(aut_findwindow|aut_iswindow|aut_getfgwindow|aut_setfgwindow|aut_setwndpos|aut_getwndpos|aut_getwndsize|aut_setwndtext|aut_getwndtext|aut_getclassname|aut_showwnd|aut_getcursorpos|aut_setcursorpos|aut_run|aut_iskeydown|aut_iskeyup|aut_enumwindows|aut_enumchildwindows|aut_sendkeystrokes|aut_sendmousestrokes|aut_addkeyevent|aut_addmouseevent|aut_procevents)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-events": {
+			"patterns": [{
+				"match": "\\b(events.register|events.add|events.raise)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-fileio": {
+			"patterns": [{
+				"match": "\\b(fopen|fisopen|fateof|fwritetext|fwriteline|freadline|fclose|dcreate|dremove|fremove|denum|dgetcurrent|fgetsize|fdisdir|fexists|dexists|fcopy|fmove)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-forms": {
+			"patterns": [{
+				"match": "\\b(wnd_spawnform|wnd_setformpos|wnd_setformres|wnd_setcomppos|wnd_setcompres|wnd_setcomptext|wnd_setcompfont|wnd_getcomptext|wnd_spawnlabel|wnd_spawnbutton|wnd_spawntextbox|wnd_gettextboxtext|wnd_settextboxtext|wnd_spawncheckbox|wnd_cbischecked|wnd_cbsetvalue|wnd_spawnlistbox|wnd_lbadditem|wnd_lbinsertitem|wnd_lbremoveitem|wnd_lbupdateitem|wnd_lbselectitem|wnd_lbgetcount|wnd_lbgetselection|wnd_lbgettext|wnd_spawncombobox|wnd_cbadditem|wnd_cbremoveitem|wnd_cbgetcount|wnd_cbselectitem|wnd_cbgetselection|wnd_cbgetselectionid|wnd_cbgetitemtext|wnd_spawnlistview|wnd_lvaddcategory|wnd_lvgetsubitemcount|wnd_lvgetitemcount|wnd_lvsetitemtext|wnd_lvsetsubitemtext|wnd_lvgetitemtext|wnd_lvgetselection|wnd_lvdeleteitem|wnd_spawnprogressbar|wnd_setpbrange|wnd_setpbposition|wnd_getpbrange|wnd_getpbposition|wnd_spawnimagebox|wnd_setimageboximage|wnd_getimageboximage|wnd_isformvalid|wnd_process|wnd_freeform)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-inputbox": {
+			"patterns": [{
+				"match": "\\b(inputbox)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-miscutils": {
+			"patterns": [{
+				"match": "\\b(addtimer|timerexists|calctimers|textview|random|sleep|clpb_setstring|clpb_getstring|clpb_clear|gettickcount|fmtdatetime)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-netclient": {
+			"patterns": [{
+				"match": "\\b(net_spawnclient|net_isvalid|net_process|net_sendbuffer|net_releaseclient)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-speech": {
+			"patterns": [{
+				"match": "\\b(spk_setvoice|spk_setpitch|spk_setvolume|spk_setspeed|spk_getvoice|spk_getpitch|spk_getvolume|spk_getspeed|spk_speak|spk_speakasync)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-strings": {
+			"patterns": [{
+				"match": "\\b(s_getlen|s_getchar|s_append|s_find|s_substr|s_replace|s_tokenize|s_settokenindex|s_cleartokens|s_upper|s_lower|s_rtrim|s_ltrim|s_fmtescseq)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-textinput": {
+			"patterns": [{
+				"match": "\\b(input|setinput)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
