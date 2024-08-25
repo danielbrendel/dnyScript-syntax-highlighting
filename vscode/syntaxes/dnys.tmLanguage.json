@@ -107,7 +107,7 @@
 		},
 		"plugin-array": {
 			"patterns": [{
-				"match": "\\b(static_array|store_array_item_s|free_array_s|dynamic_array|store_array_item_d|store_item_to_array_d|copy_array_item_d|resize_array|item_insert|item_append|free_array_d|asetindex|foreach)\\b",
+				"match": "\\b(array|store_array_item|store_item_to_array|copy_array_item|resize_array|item_insert|item_append|item_remove|free_array)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
