@@ -42,6 +42,9 @@
 			"include": "#data-flags"
 		},
 		{
+			"include": "#data-reswords"
+		},
+		{
 			"include": "#variables"
 		},
 		{
@@ -163,6 +166,12 @@
 			"patterns": [{
 				"match": "\\b(true|false)\\b",
 				"name": "entity.name.type.enum.dnys"
+			}]
+		},
+		"data-reswords": {
+			"patterns": [{
+				"match": "\\b(__ALL__)\\b",
+				"name": "entity.name.function.member.dnys"
 			}]
 		}
 	},
