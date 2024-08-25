@@ -24,10 +24,7 @@
 			"include": "#plugin-forms"
 		},
 		{
-			"include": "#plugin-inputbox"
-		},
-		{
-			"include": "#plugin-miscutils"
+			"include": "#plugin-input"
 		},
 		{
 			"include": "#plugin-netclient"
@@ -37,9 +34,6 @@
 		},
 		{
 			"include": "#plugin-strings"
-		},
-		{
-			"include": "#plugin-textinput"
 		},
 		{
 			"include": "#data-types"
@@ -135,15 +129,9 @@
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
-		"plugin-inputbox": {
+		"plugin-input": {
 			"patterns": [{
-				"match": "\\b(inputbox)\\b",
-				"name": "entity.name.function.member.dnys"
-			}]
-		},
-		"plugin-miscutils": {
-			"patterns": [{
-				"match": "\\b(addtimer|timerexists|calctimers|textview|random|sleep|clpb_setstring|clpb_getstring|clpb_clear|gettickcount|fmtdatetime)\\b",
+				"match": "\\b(input|inputbox)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
@@ -162,12 +150,6 @@
 		"plugin-strings": {
 			"patterns": [{
 				"match": "\\b(s_getlen|s_getchar|s_append|s_find|s_substr|s_replace|s_tokenize|s_settokenindex|s_cleartokens|s_upper|s_lower|s_rtrim|s_ltrim|s_fmtescseq)\\b",
-				"name": "entity.name.function.member.dnys"
-			}]
-		},
-		"plugin-textinput": {
-			"patterns": [{
-				"match": "\\b(input|setinput)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
