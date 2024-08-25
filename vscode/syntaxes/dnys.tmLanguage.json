@@ -101,7 +101,7 @@
 		},
 		"reserved-words": {
 			"patterns": [{
-				"match": "\\b(require|exec|run|getscriptpath|getscriptname|listlibs|print|sys|pause|exit|quit)\\b",
+				"match": "\\b(require|exec|run|cwd|gwd|getscriptpath|getscriptname|sleep|random|textview|gettickcount|getsystemerror|setsystemerror|listlibs|print|sys|pause|exit|quit)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
