@@ -8,4 +8,4 @@ This extension provides the following syntax highlighting features:
 - dnyScript basic syntax and keywords
 - AquaShell commands including all default plugins
 
-![](https://i.imgur.com/I02zLTa.png)
+![](https://www.aquashell-scripting.com/img/code1.png)

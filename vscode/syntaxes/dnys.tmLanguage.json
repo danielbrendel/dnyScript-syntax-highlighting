@@ -98,7 +98,7 @@
 		},
 		"reserved-words": {
 			"patterns": [{
-				"match": "\\b(require|exec|run|cwd|gwd|getscriptpath|getscriptname|sleep|random|bitop|textview|gettickcount|timestamp|fmtdatetime|getsystemerror|setsystemerror|listlibs|print|sys|pause|exit|quit)\\b",
+				"match": "\\b(require|exec|run|cwd|gwd|getscriptpath|getscriptname|debug|sleep|random|bitop|textview|gettickcount|timestamp|fmtdatetime|getsystemerror|setsystemerror|threadfunc|hideconsole|listlibs|print|sys|pause|exit|quit)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
@@ -128,7 +128,7 @@
 		},
 		"plugin-forms": {
 			"patterns": [{
-				"match": "\\b(wnd_spawnform|wnd_setformpos|wnd_setformres|wnd_setformtitle|wnd_setcomppos|wnd_setcompres|wnd_setcomptext|wnd_setcompfont|wnd_getcomptext|wnd_spawnlabel|wnd_spawnbutton|wnd_spawntextbox|wnd_gettextboxtext|wnd_settextboxtext|wnd_spawncheckbox|wnd_cbischecked|wnd_cbsetvalue|wnd_spawnlistbox|wnd_lbadditem|wnd_lbinsertitem|wnd_lbremoveitem|wnd_lbupdateitem|wnd_lbselectitem|wnd_lbgetcount|wnd_lbgetselection|wnd_lbgettext|wnd_spawncombobox|wnd_cbadditem|wnd_cbremoveitem|wnd_cbgetcount|wnd_cbselectitem|wnd_cbgetselection|wnd_cbgetselectionid|wnd_cbgetitemtext|wnd_spawnlistview|wnd_lvaddcategory|wnd_lvgetsubitemcount|wnd_lvgetitemcount|wnd_lvsetitemtext|wnd_lvsetsubitemtext|wnd_lvgetitemtext|wnd_lvgetselection|wnd_lvdeleteitem|wnd_spawnprogressbar|wnd_setpbrange|wnd_setpbposition|wnd_getpbrange|wnd_getpbposition|wnd_spawnimagebox|wnd_setimageboximage|wnd_getimageboximage|wnd_isformvalid|wnd_process|wnd_freeform)\\b",
+				"match": "\\b(wnd_spawnform|wnd_setformpos|wnd_setformres|wnd_setformtitle|wnd_setcomppos|wnd_setcompres|wnd_setcomptext|wnd_setcompfont|wnd_getcomptext|wnd_spawnlabel|wnd_spawnbutton|wnd_spawntextbox|wnd_gettextboxtext|wnd_settextboxtext|wnd_spawncheckbox|wnd_cbischecked|wnd_cbsetvalue|wnd_spawnlistbox|wnd_lbadditem|wnd_lbinsertitem|wnd_lbremoveitem|wnd_lbupdateitem|wnd_lbselectitem|wnd_lbgetcount|wnd_lbgetselection|wnd_lbgettext|wnd_spawncombobox|wnd_cbadditem|wnd_cbremoveitem|wnd_cbgetcount|wnd_cbselectitem|wnd_cbgetselection|wnd_cbgetselectionid|wnd_cbgetitemtext|wnd_spawnlistview|wnd_lvaddcategory|wnd_lvgetsubitemcount|wnd_lvgetitemcount|wnd_lvsetitemtext|wnd_lvsetsubitemtext|wnd_lvgetitemtext|wnd_lvgetselection|wnd_lvdeleteitem|wnd_spawnprogressbar|wnd_setpbrange|wnd_setpbposition|wnd_getpbrange|wnd_getpbposition|wnd_spawnimagebox|wnd_setimageboximage|wnd_getimageboximage|wnd_isformvalid|wnd_process|wnd_getcurrentfocus|wnd_freeform)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
