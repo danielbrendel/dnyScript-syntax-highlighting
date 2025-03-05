@@ -25,7 +25,7 @@
             <Keywords name="Folders in comment, middle"></Keywords>
             <Keywords name="Folders in comment, close"></Keywords>
             <Keywords name="Keywords1">global const set if function elseif else for while local result unset call class method member construct destruct</Keywords>
-            <Keywords name="Keywords2">require exec run listlibs print sys pause exit quit</Keywords>
+            <Keywords name="Keywords2">require exec run listlibs print sys cwd gwd getscriptpath getscriptname textview random sleep bitop gettickcount timestamp fmtdatetime getsystemerror setsystemerror pause exit quit</Keywords>
             <Keywords name="Keywords3">bool int float string void</Keywords>
             <Keywords name="Keywords4">true false</Keywords>
             <Keywords name="Keywords5">__ALL__</Keywords>
