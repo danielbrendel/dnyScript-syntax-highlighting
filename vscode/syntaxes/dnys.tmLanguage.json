@@ -98,25 +98,25 @@
 		},
 		"reserved-words": {
 			"patterns": [{
-				"match": "\\b(require|exec|run|cwd|gwd|getscriptpath|getscriptname|sleep|random|textview|gettickcount|getsystemerror|setsystemerror|listlibs|print|sys|pause|exit|quit)\\b",
+				"match": "\\b(require|exec|run|cwd|gwd|getscriptpath|getscriptname|sleep|random|bitop|textview|gettickcount|timestamp|fmtdatetime|getsystemerror|setsystemerror|listlibs|print|sys|pause|exit|quit)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
 		"plugin-array": {
 			"patterns": [{
-				"match": "\\b(array|store_array_item|store_item_to_array|copy_array_item|resize_array|item_insert|item_append|item_remove|free_array)\\b",
+				"match": "\\b(array|array_item_get|array_item_set|array_item_copy|array_resize|array_clone|array_item_insert|array_item_append|array_item_remove|array_free)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
 		"plugin-auto": {
 			"patterns": [{
-				"match": "\\b(aut_findwindow|aut_iswindow|aut_getfgwindow|aut_setfgwindow|aut_setwndpos|aut_getwndpos|aut_getwndsize|aut_setwndtext|aut_getwndtext|aut_getclassname|aut_showwnd|aut_getcursorpos|aut_setcursorpos|aut_run|aut_iskeydown|aut_iskeyup|aut_enumwindows|aut_enumchildwindows|aut_sendkeystrokes|aut_sendmousestrokes|aut_addkeyevent|aut_addmouseevent|aut_sendmessage|aut_postmessage|aut_clpbsetstring|aut_clpbgetstring|aut_clpbclear|aut_addtimer|aut_timerexists|aut_procevents|aut_calctimers)\\b",
+				"match": "\\b(aut_findwindow|aut_iswindow|aut_getfgwindow|aut_setfgwindow|aut_setwndpos|aut_getwndpos|aut_getwndsize|aut_setwndtext|aut_getwndtext|aut_getclassname|aut_showwnd|aut_getcursorpos|aut_setcursorpos|aut_run|aut_iskeydown|aut_iskeyup|aut_enumwindows|aut_enumchildwindows|aut_sendkeystrokes|aut_sendmousestrokes|aut_keybdevent|aut_mouseevent|aut_addkeyevent|aut_addmouseevent|aut_sendmessage|aut_postmessage|aut_clpbsetstring|aut_clpbgetstring|aut_clpbclear|aut_addtimer|aut_timerexists|aut_procevents|aut_calctimers)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
 		"plugin-events": {
 			"patterns": [{
-				"match": "\\b(events.register|events.add|events.raise)\\b",
+				"match": "\\b(event.register|event.add|event.exists|event.raise|event.release)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
@@ -138,9 +138,21 @@
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
+		"plugin-ini": {
+			"patterns": [{
+				"match": "\\b(ini_read|ini_write|ini_delete)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
 		"plugin-netclient": {
 			"patterns": [{
 				"match": "\\b(net_spawnclient|net_isvalid|net_process|net_sendbuffer|net_releaseclient)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-irc": {
+			"patterns": [{
+				"match": "\\b(irc_spawn|irc_isvalid|irc_process|irc_send|irc_release)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
