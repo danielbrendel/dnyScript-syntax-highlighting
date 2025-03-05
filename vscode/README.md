@@ -9,8 +9,3 @@ This extension provides the following syntax highlighting features:
 - AquaShell commands including all default plugins
 
 ![](https://i.imgur.com/I02zLTa.png)
-
-## Release notes
-
-### 1.0.0
-* Initial release
