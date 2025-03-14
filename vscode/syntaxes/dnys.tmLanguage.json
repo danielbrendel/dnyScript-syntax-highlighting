@@ -27,13 +27,28 @@
 			"include": "#plugin-input"
 		},
 		{
+			"include": "#plugin-ini"
+		},
+		{
 			"include": "#plugin-netclient"
+		},
+		{
+			"include": "#plugin-irc"
 		},
 		{
 			"include": "#plugin-speech"
 		},
 		{
 			"include": "#plugin-strings"
+		},
+		{
+			"include": "#plugin-dxwindow"
+		},
+		{
+			"include": "#plugin-dxrenderer"
+		},
+		{
+			"include": "#plugin-dxsound"
 		},
 		{
 			"include": "#data-types"
@@ -165,6 +180,24 @@
 		"plugin-strings": {
 			"patterns": [{
 				"match": "\\b(s_getlen|s_getchar|s_append|s_find|s_substr|s_replace|s_tokenize|s_settokenindex|s_cleartokens|s_upper|s_lower|s_rtrim|s_ltrim|s_fmtescseq)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-dxwindow": {
+			"patterns": [{
+				"match": "\\b(dx\\.wnd\\.set_event|dx\\.wnd\\.initialize|dx\\.wnd\\.release|dx\\.wnd\\.is_valid|dx\\.wnd\\.get_handle|dx\\.wnd\\.process)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-dxrenderer": {
+			"patterns": [{
+				"match": "\\b(dx\\.gfx\\.initialize|dx\\.gfx\\.release|dx\\.gfx\\.drawbegin|dx\\.gfx\\.drawend|dx\\.gfx\\.setclearcolor|dx\\.gfx\\.setbgimage|dx\\.gfx\\.loadfont|dx\\.gfx\\.loadimage|dx\\.gfx\\.loadsprite|dx\\.gfx\\.drawstring|dx\\.gfx\\.drawbox|dx\\.gfx\\.drawfilledbox|dx\\.gfx\\.drawline|dx\\.gfx\\.drawimage|dx\\.gfx\\.drawsprite|dx\\.gfx\\.freesprite|dx\\.gfx\\.savescreenshot)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
+		"plugin-dxsound": {
+			"patterns": [{
+				"match": "\\b(dx\\.snd\\.initialize|dx\\.snd\\.query|dx\\.snd\\.is_valid|dx\\.snd\\.play|dx\\.snd\\.stop|dx\\.snd\\.release)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
