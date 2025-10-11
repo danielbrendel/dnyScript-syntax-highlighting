@@ -2,7 +2,7 @@
   "name": "dnyscript-syntax",
   "displayName": "dnyScript and AquaShell Syntax Highlighting",
   "description": "Syntax Highlighting for dnyScript and AquaShell",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "publisher": "danielbrendel",
   "icon": "images/logo.png",
   "engines": {
