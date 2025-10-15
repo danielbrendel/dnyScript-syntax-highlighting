@@ -15,6 +15,9 @@
 			"include": "#plugin-auto"
 		},
 		{
+			"include": "#plugin-dialog"
+		},
+		{
 			"include": "#plugin-env"
 		},
 		{
@@ -25,9 +28,6 @@
 		},
 		{
 			"include": "#plugin-forms"
-		},
-		{
-			"include": "#plugin-input"
 		},
 		{
 			"include": "#plugin-ini"
@@ -132,6 +132,12 @@
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
+		"plugin-dialog": {
+			"patterns": [{
+				"match": "\\b(input|inputbox)\\b",
+				"name": "entity.name.function.member.dnys"
+			}]
+		},
 		"plugin-env": {
 			"patterns": [{
 				"match": "\\b(env_getvariable|env_setvariable)\\b",
@@ -153,12 +159,6 @@
 		"plugin-forms": {
 			"patterns": [{
 				"match": "\\b(wnd_spawnform|wnd_setformpos|wnd_setformres|wnd_setformcentered|wnd_setformtitle|wnd_setcomppos|wnd_setcompres|wnd_setcomptext|wnd_setcompfont|wnd_getcomptext|wnd_getcomphandle|wnd_setcompstyle|wnd_spawnlabel|wnd_spawnbutton|wnd_spawntextbox|wnd_settextboxmultiline|wnd_gettextboxtext|wnd_settextboxtext|wnd_appendtextboxtext|wnd_spawncheckbox|wnd_cbischecked|wnd_cbsetvalue|wnd_spawnlistbox|wnd_lbadditem|wnd_lbinsertitem|wnd_lbremoveitem|wnd_lbupdateitem|wnd_lbselectitem|wnd_lbgetcount|wnd_lbgetselection|wnd_lbgettext|wnd_spawncombobox|wnd_cbadditem|wnd_cbremoveitem|wnd_cbgetcount|wnd_cbselectitem|wnd_cbgetselection|wnd_cbgetselectionid|wnd_cbgetitemtext|wnd_spawnlistview|wnd_lvaddcategory|wnd_lvgetsubitemcount|wnd_lvgetitemcount|wnd_lvsetitemtext|wnd_lvsetsubitemtext|wnd_lvgetitemtext|wnd_lvgetselection|wnd_lvdeleteitem|wnd_spawnprogressbar|wnd_setpbrange|wnd_setpbposition|wnd_getpbrange|wnd_getpbposition|wnd_spawnimagebox|wnd_setimageboximage|wnd_getimageboximage|wnd_isformvalid|wnd_process|wnd_getcurrentfocus|wnd_freeform)\\b",
-				"name": "entity.name.function.member.dnys"
-			}]
-		},
-		"plugin-input": {
-			"patterns": [{
-				"match": "\\b(input|inputbox)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
