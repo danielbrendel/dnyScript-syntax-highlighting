@@ -194,7 +194,7 @@
 		},
 		"plugin-dxwindow": {
 			"patterns": [{
-				"match": "\\b(dx\\.wnd\\.set_event|dx\\.wnd\\.initialize|dx\\.wnd\\.release|dx\\.wnd\\.is_valid|dx\\.wnd\\.get_handle|dx\\.wnd\\.process)\\b",
+				"match": "\\b(dx\\.wnd\\.set_event|dx\\.wnd\\.initialize|dx\\.wnd\\.release|dx\\.wnd\\.is_valid|dx\\.wnd\\.get_handle|dx\\.wnd\\.seticon|dx\\.wnd\\.process)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
