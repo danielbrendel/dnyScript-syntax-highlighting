@@ -128,7 +128,7 @@
 		},
 		"plugin-auto": {
 			"patterns": [{
-				"match": "\\b(aut_findwindow|aut_iswindow|aut_getfgwindow|aut_setfgwindow|aut_setwndpos|aut_getwndpos|aut_getwndsize|aut_setwndtext|aut_getwndtext|aut_getclassname|aut_showwnd|aut_getcursorpos|aut_setcursorpos|aut_run|aut_iskeydown|aut_iskeyup|aut_enumwindows|aut_enumchildwindows|aut_sendkeystrokes|aut_sendmousestrokes|aut_keybdevent|aut_mouseevent|aut_addkeyevent|aut_addmouseevent|aut_sendmessage|aut_postmessage|aut_clpbsetstring|aut_clpbgetstring|aut_clpbclear|aut_addtimer|aut_timerexists|aut_procevents|aut_calctimers)\\b",
+				"match": "\\b(aut_findwindow|aut_iswindow|aut_getfgwindow|aut_setfgwindow|aut_setwndpos|aut_getwndpos|aut_getwndsize|aut_setwndtext|aut_getwndtext|aut_getclassname|aut_showwnd|aut_getcursorpos|aut_setcursorpos|aut_run|aut_iskeydown|aut_iskeyup|aut_enumwindows|aut_enumchildwindows|aut_sendkeystrokes|aut_sendmousestrokes|aut_keybdevent|aut_mouseevent|aut_addkeyevent|aut_addmouseevent|aut_sendmessage|aut_postmessage|aut_setwindowlong|aut_getwindowlong|aut_updatewindow|aut_clpbsetstring|aut_clpbgetstring|aut_clpbclear|aut_addtimer|aut_timerexists|aut_cleartimer|aut_procevents|aut_calctimers)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
