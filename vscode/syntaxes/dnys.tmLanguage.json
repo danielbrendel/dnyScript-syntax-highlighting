@@ -134,7 +134,7 @@
 		},
 		"plugin-dialog": {
 			"patterns": [{
-				"match": "\\b(input|inputbox)\\b",
+				"match": "\\b(input|inputbox|opendialog|savedialog|msgbox|msgbeep|sndbeep)\\b",
 				"name": "entity.name.function.member.dnys"
 			}]
 		},
